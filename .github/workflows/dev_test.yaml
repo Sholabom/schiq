@@ -5,7 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       uses: actions/checkout@v3
-      -run : echo "this is a test, for a job triggered by a push event a a ${{ github.event_name }} event."
+      -run : echo "this is a test, for a job triggered a a ${{ github.event_name }} event."
       -run: python demo.py
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
