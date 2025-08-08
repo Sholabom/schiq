@@ -4,7 +4,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      uses: actions/checkout@v3
+      -uses: actions/checkout@v3
       -run : echo "this is a test, for a job triggered a a ${{ github.event_name }} event."
       -run: python demo.py
       
